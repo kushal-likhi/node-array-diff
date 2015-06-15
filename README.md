@@ -22,6 +22,7 @@ result.removed //Array of elements removed in updated array
 There are two use cases:
 
 **CASE 1:** Difference based on element values.
+
 **CASE 2:** Difference based on any key in the element of array. ***(Array of Objects)***.
 
 
