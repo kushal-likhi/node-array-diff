@@ -2,13 +2,13 @@
 Find elements added and removed explicitly between two arrays or elements or objects.
 
 ```
-npm install array-diff --save
+npm install simple-array-diff --save
 ```
 
 ##Usage##
 ```javascript
 //Require the module
-var  arrayDiff = require('array-diff');
+var  arrayDiff = require('simple-array-diff');
 
 //Use it
 var result = arrayDiff(<Original Array>, <Updated Array>, [Optional 'key' of prop to consider as unique field in case of array of objects]);
@@ -29,7 +29,7 @@ There are two use cases:
 ###CASE 1: Difference based on element values###
 
 ```javascript
-var  arrayDiff = require('array-diff');
+var  arrayDiff = require('simple-array-diff');
 var result = arrayDiff(
     [1, 2, 3, 4, 5, 6],
     [1, 2, 4, 5, 6, 0, 9, 10]
@@ -42,7 +42,7 @@ OUTPUT:
 ```
 
 ```javascript
-var  arrayDiff = require('array-diff');
+var  arrayDiff = require('simple-array-diff');
 var result = arrayDiff(
     ['a', 'b', 'c', 1, 3, 5, true],
     ['c', 'd', 'e', 7, 3, 4, 5, false, true]
@@ -57,7 +57,7 @@ OUTPUT:
 ###CASE 2: Difference based on any key in the element of array. (Array of Objects)###
 
 ```javascript
-var  arrayDiff = require('array-diff');
+var  arrayDiff = require('simple-array-diff');
 var result = arrayDiff(
                 [
                     {id:1, name: 'a'},

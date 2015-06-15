@@ -1,5 +1,5 @@
 {
-  "name": "array-diff",
+  "name": "simple-array-diff",
   "version": "1.0.0",
   "description": "Find elements added and removed explicitly between two arrays or elements or objects.",
   "main": "lib/arrayDiff.js",
