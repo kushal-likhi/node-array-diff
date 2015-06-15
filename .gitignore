@@ -1,0 +1,41 @@
+###########################
+# WebStorm Files
+###########################
+.idea/
+*ipr
+*.iml
+
+
+###########################
+# NPM Files
+###########################
+node_modules
+npm-debug.log
+
+
+###########################
+# Local Files
+###########################
+_files
+.temp
+.files
+.tmp
+.sass-cache
+
+
+###########################
+# Misc Files
+###########################
+.DS_Store
+.c9
+/server/config/local.env.js
+*.cache
+test.html
+
+
+###########################
+# Dynamic Files
+###########################
+bower_components
+web-app/views/min
+web-app/dist
