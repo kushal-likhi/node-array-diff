@@ -1,0 +1,30 @@
+{
+  "name": "array-diff",
+  "version": "1.0.0",
+  "description": "Find elements added and removed explicitly between two arrays or elements or objects.",
+  "main": "lib/arrayDiff.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kushal-likhi/node-array-diff.git"
+  },
+  "keywords": [
+    "Array",
+    "Difference",
+    "Diff",
+    "Delta",
+    "Added",
+    "Removed"
+  ],
+  "author": "Kushal Likhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kushal-likhi/node-array-diff/issues"
+  },
+  "homepage": "https://github.com/kushal-likhi/node-array-diff",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
