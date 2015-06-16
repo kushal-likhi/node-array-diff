@@ -15,6 +15,7 @@ var result = arrayDiff(<Original Array>, <Updated Array>, [Optional 'key' of pro
 
 result.added //Array of elements added in updated array
 result.removed //Array of elements removed in updated array
+result.common //Array of elements which are also present in updated array. Common elements in both arrays.
 
 ```
 
@@ -38,7 +39,7 @@ console.log(result);
 ```
 ```
 OUTPUT:
-{ added: [ 0, 9, 10 ], removed: [ 3 ] }
+{ added: [ 0, 9, 10 ], removed: [ 3 ], common: [ 1, 2, 4, 5, 6 ] }
 ```
 
 ```javascript
@@ -51,7 +52,7 @@ console.log(result);
 ```
 ```
 OUTPUT:
-{ added: [ 4, 7, 'd', 'e', false ], removed: [ 1, 'a', 'b' ] }
+{ added: [ 4, 7, 'd', 'e', false ], removed: [ 1, 'a', 'b' ], common: [ 3, 5, 'c', true ] }
 ```
 
 ###CASE 2: Difference based on any key in the element of array. (Array of Objects)###
@@ -78,9 +79,7 @@ console.log(result);
 ```
 OUTPUT:
 { added: [ { id: 7, name: 'e' } ],
-  removed:
-   [ { id: 3, name: 'c' },
-     { id: 4, name: 'd' },
-     { id: 5, name: 'e' } ] 
+  removed: [ { id: 3, name: 'c' }, { id: 4, name: 'd' }, { id: 5, name: 'e' } ],
+  common: [ { id: 1, name: 'a' }, { id: 2, name: 'b' } ]
 }
 ```
